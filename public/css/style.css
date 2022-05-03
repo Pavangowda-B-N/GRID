@@ -1,0 +1,40 @@
+body{
+    background-color: aqua;
+}
+h1{
+    border: 2px solid red;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: yellow;
+}
+#time{
+    width:180px;
+    height: 25px;
+    border:2px solid rebeccapurple;
+}
+.labe{
+    color:blue;
+    font-weight: bold;
+}
+.button_edit{
+    width:150px;
+    height: 25px;
+    margin: 10px;
+    border:2px solid rebeccapurple;
+}
+#timer{
+    background-color: rgb(255, 196, 0);
+    width:50%;
+    height: 600px;
+}
+#stopwatch{
+    position:absolute;
+    right: 10px;
+    top:70px;
+    background-color: rgb(255, 196, 0);
+    width:46%;
+    height: 600px;
+}
+#audiofile{
+    display: none;
+}

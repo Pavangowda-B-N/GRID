@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <style>
+    body{
+      height: 90vh;;
+      background-image: url("https://cdn.wallpapersafari.com/63/61/smXhac.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+   
+    }
+    #form{
+      width: 25%;
+      border:2px solid black;
+      margin: auto;
+    margin-top:30vh;
+      text-align: center;
+      /* background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0HCA0HBw0NDQ8NDQcNFREWFhURExMYHSggGBolGxMTITEhMSkrLjouFx8zODMtNygtLisBCgoKDQ0NDw0NFSsZFRkrKy0tLTcrKys3NysrKy0rKystLSstKzctKysrKysrKysrNzcrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMEAAcF/8QAGhABAQEBAQEBAAAAAAAAAAAAAAIBERIDE//EABkBAQEBAQEBAAAAAAAAAAAAAAEAAgQDBf/EABgRAQEBAQEAAAAAAAAAAAAAAAAREgEC/9oADAMBAAIRAxEAPwD1no9T67r5juivXdT6OUlFM0ep9HqEU6PU80c0iKdd0nR6hD9HpOu6qIfruk67poh+u6TruqqG67peh1Uw/Q6XodFMN0N0vQ3UYbobpehtIw3Q6XodRhuh0vQ6FD9cn6cjCeh9I+hyk3FvQ5SWUOahFuj1HNN1CK5o9T9DmgRTNHqfoeoRTrup9HqEU6HSdd0qH67pOu6lD9DpOh0KH6G6TobRMP0N0m0G0DD9DpN0PSMP6DaT2g9Iw/XdT9B6JinXJehSiOUbKQyhyk9IvlGykMo2UhF8o2UhlGygItlGzUMo2UhFuj1LKH0BFfTvSfp3VRFOu6n6d1URTrvSfQ6qop6D0n6D0qYp6D0n6DaRinovSei+kYpuhtJ7RdpGKbQek9oPRMU9B6T9B6RivpyXpyUZ8o2Uz5Rspt6RoyjZTPlHymRGjKNlM+UfNAi+Ub0hlGygItlG9I5ps0CKdH0n13QIp13U+u6hD9d0nQ3Uof0HpPobSMPtBtJ7QbSMU2i+k9ou0TFdou0ntF2iYrtBtJbQeiYp6D0n6D0lFfTkvTkYzZRspmyj5T1j0jTlGymfKNlM94I05R8pmyj5TIjRlGzUMo+ayItmmykco2aGYt6d1Po+gIp6DpOh1CKdLtF9F2gofaLtE2i7RMPtF2ibRdpGH2g2k9ou0TFNoNpLaDaJinoPSXoNsmK+g9I+g9Exb05H0JijLlHymXKPlPWNtWUbKZss+Uz3iacpTKZso+Uz3gjTlHymfKPlM94zGjKNmoZR8pmBbNHqWaPQFOu3SdDdAPul3S7pd1I20TaLtE2kj7RNom0TaMaU2ibSe0XaMMV2i7aW2X01DFdoNpHbD2YYt6D2j6d6aii3pyHpyijNlmy2XLPlujvC1ZZ5plyz5bHeJrmlJpkm1ZtnvE1TSk0yzSk0x3jLVNHymaaUyme8ZXyhzUco3oQKddup+nbQgNtF2i7RNpRG2ibRapPaUJ6pOqJVJ7RhU2ybae0TbMaV2y7aO2XbahW9h7Q2w9tRL+w9oew9mFf25n9uMTNlny2TLNlunLNbMtTLY8s82z3ya2zak2xTas2x3yK2zak0xzas2z3yK2TSmUxzamWx3yzWrKPlM2WbKGWav6DaS9O2hlU+0XaT2iVayqerTqyVadWsmnq0qslWlVnJU2ybaVWnVtZaq22TbR2y7ZyatthtobZdtrKrR7D2z/oHtrKrT7Bn9uWVWbLPlseWfLdffLz02ZZ8tiy1JtnvlabZtWbYZtSbY75Wm+bVm2CbVn6M98qt82rNsM2pP0Y75Zrblny2PPobPoMitXt22zfo79BkVfbJto79CbayqpVp1adWlVrJqlWlVp1aVWctVSvonVpVadW1zyattk20d+hNs88qr7YbbP7LttZOmnbD9Gf2X2cjTT+gsvtxytIZZstl9my3Xl4aa8s+Wx5Z8tnvk6bJ+is/Rhy1Jtnvlabp+is/Rgn6Kz9GO+Vpvn6Kz9Hz5+is/RnI03Z9D59GLPobPoMitn6O/Rk/R36M5Vad+hN+jPv0LX0WVVqtKvolX0Sr6HJqtfRKrSq06s5OlatPfojVk2zk6W2ybaO2TbaytL79A9s+2G2crTR7L7Q9h7ORpo9uZ/bjkaR9my2f0OU68ufTTlmy2bKNls98nTVlqTbHlny2e+Tpty1J+jDlqTbPfK03T9FM+jBn0Uz6M5Wm7PobPoxZ9DZ9GcrTb+ofoyfo79BlVq36E36M+/Qu/RZWl6+idfRDbJtnJ0tVpVaVWntnK0rVk20tsm2crSu2XbR2y7ZytLbYe0doPRytLe3e0PQejkaX9uQ9uMGieh9Jeh9OiOfS3ocpD0PoQ6aMo2Uz5Q5Q7w6ass+Wy5RstnJ0159D59GPLNls5WmzPobPox5ZvYytNf6O/Rk9u9iGtW/Qu/Rn/Qu2sqr79CbaO2XbWVpXbJtJbZds5WlNou0ltl2jFpXaL6T9F2lBpTaD0n6D0YNK+g9J+g6otK+hR9OMWndd0nXddEc9U6PpLo9ENV9DlJdHKENWyhy0cofTMNXyzZbPlDlCLTR7H2z+nehDWn2HtD272Iqv7DaR9B6UVV2g2ktou0oqrtF2k9ou0YqptF2ibobqi0faD0n0OqCqeg9E6HVFT+ndJ0OpU/RT64qn67pXde8eFN13S9d0Q0/XdL13RDTdHpOu6Iqp0fSfXdENU9D6S67oiqvp3pPoelFVfTvSXXdEVU6HSdDpip+h0nQ3VFTbodDodCo9DoAlTdDoAlTO6XodSpuiRyVWBznu83C5wQOBwIiDghFzgQFzgXA5yTnOckDnOScGucE4Mc5AHOckUXOBBznJA5zkn//Z"); */
+      /* background-repeat: no-repeat; */
+      background-color:#FEFBE7;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    #form div{
+      height:30%;
+      width:100%;
+     
+    }
+    input{
+      width: 70%;
+      height:100%;
+      background-color: #FEFBE7;  
+      border-radius: 5px; 
+      border:none;
+      border: 3px solid blue;
+      padding: 10px;
+      padding-left: 62px;
+      margin-left: -50px;
+  
+    }
+    button{
+      margin-top: 4%;
+      height:40px;
+      width: 90%;
+      border-radius: 10px;
+    }
+    .submit{
+      background-color: #2D31FA;
+      color: white;
+    }
+    .submit:hover{
+      background-color: #4700D8;
+    }
+    .reset{
+      background-color: #FF1818;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .reset:hover{
+      background-color: #EC0101;
+    }
+    h2{
+      font-family: 'Bebas Neue', cursive;
+    }
+    .user-icon{
+     position: relative;
+     top:18px;
+      
+    }
+    @media(max-width:600px)
+  {
+    #form{
+      width: 100%;
+     
+    }
+    button{
+      width:300px;
+    }
+  }
+    
+
+
+    
+  </style>
+</head>
+<body>
+  <div id="form">
+    <form>
+      <h2>Sign in</h2>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="user-icon" height="40px" class="user-icon">
+        <input type="username" placeholder="username" autofocus > 
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3427/3427189.png" alt="user-icon" height="40px" class="user-icon">
+        <input type="password" placeholder="password" >
+      </div>
+      <button type="submit" class="submit">Sign in</button> <br>
+      <button type="reset" class="reset">reset password</button> <br>
+    </form>
+  </div>
+</body>
+</html>

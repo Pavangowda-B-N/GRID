@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.browser_clock.com</title>
+    <script type="text/javascript" src="css/fun.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor="pink">
+    <h1 align="center">Clock</h1>
+    <div id="timer">
+    <h2>Timer:-</h2>
+        <progress value="0" max="100" id="progress"></progress>
+        <h2 id="prsts"></h2>
+    <input type="Number" id="time" placeholder="Enter time">
+    <input type="radio" name="same" class="radios" id="radio-1" value="second" checked> <label class="labe" >sec</label>
+    <input type="radio" name="same" class="radios" id="radio-2" value="minute"> <label class="labe" >min</label>
+    <input type="radio" name="same" class="radios" id="radio-3" value="hour"> <label class="labe" >hour</label><br><br>
+    <button id="set"  class="button_edit" onclick="set()">start</button>
+    <button id="stop" class="button_edit"  onclick="stop()">stop</button>
+    <button id="reset" class="button_edit"  onclick="reset()">reset</button>
+
+   <!--<h2 id="runner">Time=</h2>--> 
+    <h2 id="time_left">Time left=</h2>
+    <h2 align="center" id="timeoveralert"></h2>
+    </div>
+<div id="stopwatch">
+    <h2>Stop Watch:-</h2>
+
+    <input type="radio" name="same-1" class="radios" id="radio-4" value="second" checked> <label class="labe" >sec</label>s
+    <input type="radio" name="same-1" class="radios" id="radio-5" value="minute"> <label class="labe" >min</label>
+    <input type="radio" name="same-1" class="radios" id="radio-6" value="hour"> <label class="labe" >hour</label><br><br>
+    <button id="set" class="button_edit" onclick="start1()">start</button>
+    <button id="stop" class="button_edit" onclick="stop1()">stop</button>
+    <button id="reset" class="button_edit" onclick="reset1()">reset</button>
+    <button id="reset" class="button_edit" onclick="lap()">lap</button>
+
+   <!--<h2 id="runner">Time=</h2>--> 
+    <h2 id="timehead">Time =</h2>
+    <h2 id="lapper"></h2>
+
+    <audio controls autoplay id="audiofile">
+        <source src="" alt="error">
+    </audio>
+</div>
+</body>
+</html>

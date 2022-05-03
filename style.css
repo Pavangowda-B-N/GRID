@@ -1,0 +1,120 @@
+
+/* grids */
+
+body{
+    margin: 0;
+    height: 100vh;
+    display:grid;
+    grid-template-areas: 
+    'header header header'
+    'navigation content sidebar'
+    
+    ;
+    grid-template-columns: 180px 4fr 180px;
+    grid-template-rows: 70px 1fr;
+}
+header{
+    grid-area: header;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
+}
+nav{
+    grid-area: navigation;
+}
+main{
+    grid-area: content;
+}
+aside{
+    grid-area: sidebar;
+}
+
+header,nav,main,aside{
+    border:3px solid white;
+    background-color: blue;
+    color: white;
+}
+
+/* grid end */
+/*defaults changer*/
+#traveller{
+    cursor: pointer;
+}
+#sign_in{
+    border-bottom: 3px solid red;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-top: 0px;
+    
+}
+.logosec{
+    display:flex;
+    
+}
+.logosec>img{
+    margin-right: 10px;
+}
+.container>div>ul>li{
+    font-weight: bold;
+    list-style-type: none;
+    margin: 10px;
+}
+.container>div>ul>li:hover{
+    color: yellow;
+}
+.container>div>ul{
+    display: flex;
+    margin: 10px;
+}
+
+
+.navigation>ul{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+.navigation>ul>li{
+    
+    list-style-type: none;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-left: -40px;
+    
+}
+.navigation>ul>li:hover{
+    color:black;
+    background-color: #FEFBE7;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+/* sidenav */
+.sidenavimg{
+    position: static;
+   margin-top: 40px;
+   margin-left: 30px;
+    
+}
+
+@media screen and (max-width:1300px){
+    
+    body{
+     
+      content: url("https://images.drivereasy.com/wp-content/uploads/2016/03/preparing-automatic-repair-screen.jpg");
+      height: 100vh;
+      width: 100%;
+      
+    } 
+    
+    
+}
